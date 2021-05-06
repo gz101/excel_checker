@@ -2,6 +2,7 @@
 import pandas as pd 
 
 
+# Define useful functions.
 def report_diff(x):
     """
     report_diff x -- Defines a function to show the changes within each
@@ -9,6 +10,8 @@ def report_diff(x):
     """
     return x[0] if x[0] == x[1] else '{} ---> {}'.format(*x)
 
+
+# Body goes here.
 # Load data and create columns to track.
 old = pd.read_excel("sample-address-1.xlsx", "Sheet1", na_values=["NA"])
 new = pd.read_excel("sample-address-2.xlsx", "Sheet1", na_values=["NA"])
